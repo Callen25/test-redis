@@ -18,7 +18,7 @@ txt_files = glob.glob("*.txt")
 for file in txt_files:
     with open(file, 'r') as doc:
         data = doc.read()
-
+        
     tokens = word_tokenize(data)
 
     words = set()
